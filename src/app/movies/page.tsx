@@ -33,21 +33,19 @@ export default function MoviePage() {
         return <div>Error: {error.message}</div>;
     }
 
-    //mobile : grid col1
-    // desktop : grid col2
-    // composant card doit passer en props toutes les infos
-    
     return (
         <div>
-            {data.length > 0 ? 
-            data.map((movie, index) => (<div key={index}> <Card 
-                poster = {movie.poster}
-                title={movie.title} 
-                year={movie.year} 
-                rating={movie.rating} 
-                genre={movie.genre} 
-                director={movie.director} /></div>)) 
-            : "No data available"}
+            <header className="fixed bg-awesome-yellow w-full justify-center text-3xl font-bold font-MonografTextBold z-20">MOVIE NIGHT</header>
+            <div className="flex flex-col gap-4 justify-center items-center pt-12">
+                {data.length > 0
+                    ? data.map((movie, index) => (
+                          <div key={index}  className="bg-beautiful-grey backdrop-blur-sm justify-center items-center w-4/5 rounded">
+                              {" "}
+                              <Card poster={movie.poster} title={movie.title} year={movie.year} rating={movie.rating} genre={movie.genre} director={movie.director} />
+                          </div>
+                      ))
+                    : "No data available"}
+            </div>
         </div>
     );
 }
