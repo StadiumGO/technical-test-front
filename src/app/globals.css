@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: MonografTextRegular;
+  src: url(/MonografTextRegular.ttf);
+}
+
+@font-face {
+  font-family: MonografTextBold;
+  src: url(/MonografTextBold.ttf);
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,14 +26,8 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.background{
+  background-image: url(https://www.denverpost.com/wp-content/uploads/2019/07/FE21MOVIES_4.jpg?w=978);
 }
 
 @layer utilities {
