@@ -1,49 +1,21 @@
-# Exercice de Test Technique pour Développeur Front-End en Alternance
-## Contexte
-Vous avez rejoint une équipe de développement travaillant sur une application web Next.js utilisant TailwindCSS. 
-Votre tâche est de compléter et améliorer une fonctionnalité existante en suivant les spécifications ci-dessous. 
-Vous devez créer une page de listing de films avec des informations dynamiques récupérées depuis une API fictive.
+# Test technique StadiumGO
 
-## Objectif
-Créer une page de listing de films en utilisant Next.js 14 (App Router) et TailwindCSS. 
-Vous devez récupérer les données depuis une API et les afficher.
+### Getting Started
 
-## Durée estimée
-~ 3 heures
+1 : Clone the repository and cd into it
 
-## Étapes à suivre
+2 : `npm install`
 
-### Setup
-1. Cloner le Repository
-2. Installer les dépendances 
-3. Lancer NextJS 
-   * avec npm : `npm run dev` 
-   * avec docker : `docker compose up -d`
+3 : `npm run dev`
 
-### Récupérer les données Movies:
-Une API est exposé par le fichier `src/app/api/movies/routes.ts`
+### Verifications
 
-### Créer la Page de Listing:
-Créez un fichier `page.tsx` dans le dossier `src/app/movies`.
-Utilisez la méthode fetch pour récupérer les données de l'utilisateur depuis l'API et mettre en page les éléments.
+Prettier : `npm run prettier` or `npm run prettier:check`
 
-### Styliser avec TailwindCSS:
-Utilisez les classes TailwindCSS pour créer la page de listing. 
-Voici 2 liens figma a suivre : 
-- Mobile : https://www.figma.com/proto/pCbevQ3QXBn1mGxHNqYPAj/Untitled?node-id=4-4407&t=ArI2wpZfVtqbF6JL-0&scaling=min-zoom&page-id=0:1
-- Desktop : https://www.figma.com/proto/pCbevQ3QXBn1mGxHNqYPAj/Untitled?node-id=1-41&t=ArI2wpZfVtqbF6JL-0&scaling=min-zoom&page-id=0:1
+### Start Dev !
 
-### Bonus:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Implémenter une popin affichant les détails du Film cliqué.
+### Design
 
-## Critères de Réussite
-- La page de listing doit afficher correctement les informations.
-- Le design doit être propre, responsive, et utiliser TailwindCSS efficacement.
-- Le code doit être clair, bien structuré et suivre les bonnes pratiques de développement (Atomic Design Pattern)
-
-## Livrables
-- URL du repository GitHub avec votre solution.
-- Un fichier README décrivant les étapes pour lancer l'application et toute autre information pertinente.
-
-Bonne chance !
+Design system: `https://www.figma.com/proto/pCbevQ3QXBn1mGxHNqYPAj/Untitled?node-id=1-41&t=ArI2wpZfVtqbF6JL-0&scaling=min-zoom&page-id=0:1`
