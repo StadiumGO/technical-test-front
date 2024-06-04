@@ -1,7 +1,7 @@
 services:
   nextjs:
     image: node:18-alpine
-    restart: "no"
+    restart: 'no'
     user: 1000:1000
     working_dir: /app
     ports:
@@ -12,7 +12,7 @@ services:
 
   node:
     image: node:18-alpine
-    restart: "no"
+    restart: 'no'
     user: 1000:1000
     working_dir: /app
     volumes:
