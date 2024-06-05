@@ -1,6 +1,8 @@
 import clsx from "clsx";
 import Image from "next/image";
 
+import Tag from "./Tag";
+
 const Movie = ({
   className,
   title,
@@ -20,7 +22,7 @@ const Movie = ({
   director: string;
 }) => {
   return (
-    <div
+    <section
       {...rest}
       className={clsx(
         className,
@@ -32,19 +34,19 @@ const Movie = ({
         <h2 className="uppercase font-bold text-2xl text-center lg:text-left">
           {title}
         </h2>
-        <div className="flex items-center justify-center lg:justify-start gap-3 text-xs mt-2">
-          <span className="rounded bg-yellow-200 p-1">{year}</span>
-          <span className="rounded bg-yellow-200 p-1">{rating}</span>
-          <span className="rounded bg-yellow-200 p-1 ">{genre}</span>
-        </div>
-        <div className="text-center lg:text-left mt-2 lg:flex">
-          <div className="text-sm lg:text-xs">Directed by :</div>
-          <div className="font-bold text-sm lg:text-xs lg:ml-1 line-clamp-1">
+        <ul className="flex items-center justify-center lg:justify-start gap-3 text-xs mt-2">
+          <li><Tag tagName={year}/></li>
+          <li><Tag tagName={rating}/></li>
+          <li><Tag tagName={genre}/></li>
+        </ul>
+        <ul className="text-center lg:text-left mt-2 lg:flex">
+          <li className="text-sm lg:text-xs">Directed by :</li>
+          <li className="font-bold text-sm lg:text-xs lg:ml-1 line-clamp-1">
             {director}
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
