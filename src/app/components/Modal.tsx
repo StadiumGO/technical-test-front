@@ -27,7 +27,7 @@ const Modal: React.FC<ModalProps> = ({ closeModal, cast, director, plot, title }
     };
 
     return (
-        <div className={`fixed z-10 inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center transition-opacity duration-${opacityTransitionDuration} ${isVisible ? "opacity-100" : "opacity-0"}`}>
+        <div className={`fixed z-50 inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center transition-opacity duration-${opacityTransitionDuration} ${isVisible ? "opacity-100" : "opacity-0"}`}>
             <div className="w-[90%] md:w-[30%] md:min-w-[460] flex flex-col gap-5 bg-white p-8 rounded-md shadow-md">
                 <h2 className="self-center text-3xl md:text-2xl font-bold">{title}</h2>
                 <p className="max-md: text-xl">{plot}</p>

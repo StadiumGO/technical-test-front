@@ -48,7 +48,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
           </div>
           <p className="flex max-md:flex-col items-center justify-center gap-2 text-xl md:text-base overflow-hidden">
             <span className="max-md:text-center whitespace-nowrap">Directed by :</span>
-            <span className="block font-bold max-md:text-center overflow-hidden text-ellipsis">{director}</span>
+            <span className="font-bold max-md:text-center overflow-hidden text-ellipsis">{director}</span>
           </p>
         </div>
         <button 
