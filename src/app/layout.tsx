@@ -16,7 +16,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>Movie Night</title>
+        <meta 
+          name="description" 
+          content="The most beautiful and the oldest movies you have ever seen"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+      </head>
+      <body className={`${inter.className} min-h-screen overflow-x-hidden flex max-md:flex-col`}>{children}</body>
     </html>
   );
 }
