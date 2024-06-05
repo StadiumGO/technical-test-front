@@ -6,9 +6,16 @@ import Movie from "./components/Movie";
 const Home = () => {
   const [data, setData] = useState<any[]>([]);
 
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
   const getMovies = async () => {
+    if (!apiUrl) {
+      console.error("API URL is not defined");
+      return;
+    }
+
     try {
-      const response = await fetch("http://localhost:3000/api/movies/");
+      const response = await fetch(apiUrl);
       if (!response.ok) {
         throw new Error("No response");
       }
