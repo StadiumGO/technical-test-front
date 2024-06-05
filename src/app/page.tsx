@@ -33,19 +33,13 @@ const Home = () => {
   return (
     <body>
       <main className="bg-yellow-200 grid grid-cols-2 lg:grid-cols-[350px_1fr] justify-center">
-        <h1 className="place-self-center bg-fixed col-span-2 lg:col-span-1 flex items-stretch uppercase font-bold text-2xl lg:text-4xl">
+        <h1 className="place-self-center col-span-2 lg:col-span-1 flex items-stretch uppercase font-bold text-2xl lg:text-4xl">
           Movie night
         </h1>
         <ul className="bg-cinema bg-fixed lg:bg-cover col-start-1 col-span-2 lg:col-start-2 lg:col-span-2 lg:grid lg:grid-cols-2 pt-10">
-          {data.map((movie) => (
-            <li key={movie.title} className="mb-4">
-              <Movie
-                title={movie.title}
-                poster={movie.poster}
-                year={movie.year}
-                rating={movie.rating}
-                genres={movie.genre}
-                director={movie.director}
+          {data.map((movie, key) => (
+            <li key={key} className="mb-4">
+              <Movie {...movie}
               />
             </li>
           ))}
