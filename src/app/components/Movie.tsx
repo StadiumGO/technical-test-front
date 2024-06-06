@@ -2,24 +2,31 @@ import clsx from "clsx";
 import Image from "next/image";
 
 import Tag from "./Tag";
+import IconLink from "./IconLink";
 
 const Movie = ({
   className,
+  id,
   title,
   poster,
   year,
   rating,
   genre,
   director,
+  cast,
+  plot,
   ...rest
 }: {
   className?: string;
+  id: string;
   title: string;
   poster: string;
   year: number;
   rating: number;
   genre: string;
   director: string;
+  cast: string;
+  plot: string;
 }) => {
   return (
     <section
@@ -46,6 +53,7 @@ const Movie = ({
           </li>
         </ul>
       </div>
+      <IconLink cast={cast} plot={plot} id={id} title={title}/> 
     </section>
   );
 };
