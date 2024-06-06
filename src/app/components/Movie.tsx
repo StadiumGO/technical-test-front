@@ -6,7 +6,6 @@ import IconLink from "./IconLink";
 
 const Movie = ({
   className,
-  id,
   title,
   poster,
   year,
@@ -18,7 +17,6 @@ const Movie = ({
   ...rest
 }: {
   className?: string;
-  id: string;
   title: string;
   poster: string;
   year: number;
@@ -53,7 +51,7 @@ const Movie = ({
           </li>
         </ul>
       </div>
-      <IconLink cast={cast} plot={plot} id={id} title={title}/> 
+      <IconLink cast={cast} plot={plot} title={title} {...rest}/> 
     </section>
   );
 };

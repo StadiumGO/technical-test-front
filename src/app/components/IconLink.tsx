@@ -4,12 +4,11 @@ const IconLink = ({
   title,
   cast,
   plot,
-  id,
+  ...rest
 }: {
   title: string;
   cast: string[];
   plot: string;
-  id: string;
 }) => {
   const [showDetails, setShowDetails] = useState(false);
 
@@ -22,6 +21,7 @@ const IconLink = ({
       <button
         onClick={handleClick}
         className="rounded-full border-2 border-black bg-yellow-200 p-2 drop-shadow-md"
+        {...rest}
       >
         more
       </button>
