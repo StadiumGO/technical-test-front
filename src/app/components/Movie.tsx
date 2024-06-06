@@ -25,7 +25,7 @@ const Movie = ({
   rating: number;
   genre: string;
   director: string;
-  cast: string;
+  cast: string[];
   plot: string;
 }) => {
   return (
