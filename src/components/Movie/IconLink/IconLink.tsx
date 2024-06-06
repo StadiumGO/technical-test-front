@@ -20,10 +20,10 @@ const IconLink = ({
     <>
       <button
         onClick={handleClick}
-        className="rounded-full border-2 border-black bg-yellow-200 p-2 drop-shadow-md"
+        className="h-fit rounded-full border-2 border-black bg-yellow-200 p-2 drop-shadow-md text-sm"
         {...rest}
       >
-        more
+        ++
       </button>
       {showDetails && (
         <div className="fixed top-0 left-0 w-full h-full bg-white/70 flex justify-center items-center z-10">

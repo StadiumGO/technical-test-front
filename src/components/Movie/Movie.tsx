@@ -40,9 +40,15 @@ const Movie = ({
           {title}
         </h2>
         <ul className="flex items-center justify-center lg:justify-start gap-3 text-xs mt-2">
-          <li><Tag tagName={year}/></li>
-          <li><Tag tagName={rating}/></li>
-          <li><Tag tagName={genre}/></li>
+          <li>
+            <Tag tagName={year} />
+          </li>
+          <li>
+            <Tag tagName={rating} />
+          </li>
+          <li>
+            <Tag tagName={genre} />
+          </li>
         </ul>
         <ul className="text-center lg:text-left mt-2 lg:flex">
           <li className="text-sm lg:text-xs">Directed by :</li>
@@ -51,7 +57,9 @@ const Movie = ({
           </li>
         </ul>
       </div>
-      <IconLink cast={cast} plot={plot} title={title} {...rest}/> 
+      <div className="absolute right-8 top-[290px] lg:right-8 lg:top-44">
+        <IconLink cast={cast} plot={plot} title={title} {...rest} />
+      </div>
     </section>
   );
 };

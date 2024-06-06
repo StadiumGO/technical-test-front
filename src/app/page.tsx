@@ -38,7 +38,7 @@ const Home = () => {
         </h1>
         <ul className="bg-cinema bg-fixed lg:bg-cover col-start-1 col-span-2 lg:col-start-2 lg:col-span-2 lg:grid lg:grid-cols-2 pt-10">
           {data.map((movie, index) => (
-            <li key={index} className="mb-4">
+            <li key={index} className="mb-4 relative">
               <Movie {...movie} id={`movie-${index}`}
               />
             </li>
