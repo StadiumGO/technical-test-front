@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Movie from "./components/Movie";
+import Movie from "@/components/Movie/Movie";
 
 const Home = () => {
   const [data, setData] = useState<any[]>([]);

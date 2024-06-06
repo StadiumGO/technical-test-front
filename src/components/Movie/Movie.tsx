@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import Image from "next/image";
 
-import Tag from "./Tag";
-import IconLink from "./IconLink";
+import Tag from "./Tag/Tag";
+import IconLink from "./IconLink/IconLink";
 
 const Movie = ({
   className,
