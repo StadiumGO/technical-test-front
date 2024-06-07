@@ -21,7 +21,7 @@ export default function Home() {
           className=""
         />
       
-      <div className="w-3/4 flex flex-col overflow-hidden no-scrollbar overflow-y-auto">
+      <div className="w-2/4 flex flex-col overflow-hidden no-scrollbar overflow-y-auto lg:w-full lg:ml-64 lg:flex-grow-1">
         <MovieGrid />
       </div>
       

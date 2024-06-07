@@ -6,7 +6,7 @@ import MovieData from "../Atoms/movieData";
 const MovieCard = ({movie}) => {
 
   return (
-    <div className="bg-gray-200 p-6 rounded-md flex flex-col items-center gap-y-10 mx-auto my-10 bg-opacity-90">
+    <div className="bg-gray-200 p-6 rounded-md flex flex-col items-center gap-y-10 mx-auto my-10 bg-opacity-90 lg:flex-row lg:items-start lg:justify-between lg:p-12 ">
       <div className="content-center justify-center flex items-center">
        
           <div key={movie.id}>
