@@ -42,7 +42,7 @@ const IconLink = ({
             <div className="flex justify-center mb-3">
               <button
                 type="button"
-                className="h-8 px-2 text-sm rounded-md bg-gray-700 text-white "
+                className="h-8 px-2 text-sm rounded-md bg-gray-700 text-white"
                 onClick={handleClick}
               >
                 Close
