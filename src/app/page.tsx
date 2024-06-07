@@ -21,15 +21,7 @@ export default function Home() {
           className=""
         />
       
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <div className="w-[80%] flex flex-col justify-center content-center items-center">
-=======
-      <div className="w-2/4 flex flex-col overflow-hidden no-scrollbar overflow-y-auto lg:w-full lg:ml-64 lg:flex-grow-1">
->>>>>>> 9130e4f (first try of the desktop display)
-=======
       <div className="w-3/4 flex flex-col overflow-hidden no-scrollbar overflow-y-auto">
->>>>>>> f39ddbc (mobile-first version)
         <MovieGrid />
       </div>
       
