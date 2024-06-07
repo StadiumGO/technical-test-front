@@ -7,10 +7,14 @@ const MovieCard = ({movie}) => {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className="bg-gray-200 p-6 rounded-md flex flex-col items-center gap-y-10 mx-auto my-10 bg-opacity-75">
 =======
     <div className="bg-gray-200 p-6 rounded-md flex flex-col items-center gap-y-10 mx-auto my-10 bg-opacity-90 lg:flex-row lg:items-start lg:justify-between lg:p-12 ">
 >>>>>>> 9130e4f (first try of the desktop display)
+=======
+    <div className="bg-gray-200 p-6 rounded-md flex flex-col items-center gap-y-10 mx-auto my-10 bg-opacity-90">
+>>>>>>> f39ddbc (mobile-first version)
       <div className="content-center justify-center flex items-center">
        
           <div key={movie.id}>
