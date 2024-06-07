@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full h-screen text-white font-bold text-center">  
         <Navbar />
-      <div className="flex flex-col content-center items-center min-h-screen bg-fill bg-no-repeat ">
+      <div className="flex flex-col items-center min-h-screen bg-fill bg-no-repeat ">
       <Image
           src={background}
           alt="theatre-background"
@@ -21,7 +21,7 @@ export default function Home() {
           className=""
         />
       
-      <div className="w-[80%] flex flex-col justify-center content-center items-center">
+      <div className="w-3/4 flex flex-col overflow-hidden no-scrollbar overflow-y-auto">
         <MovieGrid />
       </div>
       

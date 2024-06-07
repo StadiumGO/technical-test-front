@@ -2,12 +2,12 @@
 const Poster = ({ poster }) => {
 
   return (
-    <div className="flex flex-col items-center ml-10 justify-center w-[80%]">
+    <div className="flex flex-col items-center ml-20 justify-center w-1/2">
       <div>
                 <img
                   src={poster}
                   alt=""
-                  className="rounded-3xl shadow-lg "
+                  className="shadow-lg "
                 />    
             </div>
       </div>
