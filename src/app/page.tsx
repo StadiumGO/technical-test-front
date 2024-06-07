@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Movie from "@/components/Movie/Movie";
+import Image from "next/image";
 
 const Home = () => {
   const [data, setData] = useState<any[]>([]);
@@ -65,8 +66,9 @@ const Home = () => {
 
     <body>
       <main className="flex flex-col lg:flex-row ">
-        <div className="bg-yellow-200 flex items-center justify-center lg:w-[600px]">
-          <h1 className="uppercase font-bold text-2xl lg:text-4xl p-8">
+        <div className="bg-yellow-200 flex items-center justify-center lg:w-[600px] lg:flex-col p-8">
+          <Image src="/images/chip.svg" alt="" width={50} height={50} aria-hidden="true"/>
+          <h1 className="uppercase font-bold text-2xl lg:text-4xl p-3">
             Movie night
           </h1>
         </div>
