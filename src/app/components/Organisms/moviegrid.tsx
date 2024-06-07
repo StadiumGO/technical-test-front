@@ -21,7 +21,7 @@ export default function MovieGrid() {
     <div>
       <div className="flex flex-col items-center justify-center py-14 no-scrollbar">
         {movies.map((movie:any) => (
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center lg:flex-none lg:self-start">
             <MovieCard key={movie.id} movie={movie} />
         </div>
         ))}

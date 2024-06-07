@@ -10,6 +10,7 @@ export default function Home() {
     <div className="flex flex-col w-full h-screen text-white font-bold text-center">  
         <Navbar />
       <div className="flex flex-col items-center min-h-screen bg-fill bg-no-repeat ">
+      <div className="flex flex-col items-center min-h-screen bg-fill bg-no-repeat ">
       <Image
           src={background}
           alt="theatre-background"

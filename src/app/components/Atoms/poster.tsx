@@ -8,6 +8,7 @@ const Poster = ({ poster }) => {
                   src={poster}
                   alt=""
                   className="shadow-lg "
+                  className="shadow-lg "
                 />    
             </div>
       </div>
