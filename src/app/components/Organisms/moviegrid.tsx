@@ -19,9 +19,13 @@ export default function MovieGrid() {
 
   return (
     <div>
+<<<<<<< HEAD
       <div className="flex flex-col items-center justify-center py-14">
+=======
+      <div className="flex flex-col items-center justify-center py-14 no-scrollbar lg:grid lg:grid-cols-2 lg:gap-10 lg:py-0 lg:flex-none">
+>>>>>>> 9130e4f (first try of the desktop display)
         {movies.map((movie:any) => (
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center lg:flex-none lg:self-start">
             <MovieCard key={movie.id} movie={movie} />
         </div>
         ))}
